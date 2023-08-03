@@ -174,7 +174,7 @@ footer span{
 }
 
 .contactimg {
-    max-width: 80%;
+    max-width: 50%;
     border-radius: 10px;
 }
 
@@ -315,6 +315,7 @@ hr {
 }
 .mail  {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .mail h2{
@@ -322,10 +323,17 @@ hr {
 }
 
 .smedia{
-    font-size: 30px;
+    font-size: 20px;
 }
 .smedia span{
-    font-size: 30px;
+    font-size: 20px;
     margin:20px;
     font-family: var(--main-font);
+}
+.icon{
+    width:30px;
+    margin-right:10px;
+    height: auto;
+    border-radius: 50%;
+    border:1px solid white;
 }

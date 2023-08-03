@@ -1,12 +1,331 @@
-h1{
-    font-family: 'Inria Serif', serif;
+:root{
+   --main-color: #E7EDF8;
+   --higlight-color: #d8e2f6;
+   --sec-color:#85aaf3; 
+   --box-shadow:0px -1px 40px 3px rgba(0,0,0,0.27);
+   --main-font:'Comfortaa', cursive;
+   --title-font: 'Inria Serif', serif;
+
 }
 
-h2{
-    font-family: 'Inria Serif', serif;
+
+h1, h2,h3,h4{
+    font-family: var(--title-font);
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-color{
+    background-color: var(--higlight-color);
 }
 
 p{
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Inria Sans', sans-serif;
+    font-family: var(--main-font);
+}
+
+button{
+    color:white;
+    background-color: var(--sec-color);
+    box-shadow:var(--box-shadow);
+    border-radius: 5px;
+    border: none;
+    padding:10px;
+    margin:30px;
+}
+li a{
+    font-family: var(--title-font);
+    font-weight: lighter !important;
+    
+}
+.index-div-name{
+    padding: 250px;
+    background-color: var(--main-color);
+}
+.index-div-name h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+.index-div-name h2{
+    font-size: 30px;
+    font-weight:300;
+}
+
+button a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--title-font);
+    margin-left:15px;
+    margin-right:15px;
+}
+button a:hover{
+    color:white;
+}
+
+.footer{
+    background-color: var(--higlight-color);
+    padding: 20px;
+    margin-bottom: 0px;
+}
+footer span{
+    font-family: var(--title-font);
+    font-weight: lighter;
+}
+
+.margin{
+    margin-top: 50px;
+}
+.morebtn{
+    margin-bottom: 100px;
+}
+.projecttitle{
+    margin-top:100px;
+    font-weight: lighter;
+}
+@media (max-width:768px){
+    .not-important{
+        display:none;
+    }
+   
+    .about  h1{
+        margin-top: 60px;
+        font-size: 40px !important;
+        }
+        
+    .about h2{
+        font-size:20px !important;
+    }
+    .curriculump2{
+        margin-top:0px !important;
+        text-align: justify;
+    }
+    .curriculump1{
+        margin-top:20px !important;
+        text-align: justify;
+    }
+    .index-div-name h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .index-div-name h2{
+        font-size: 20px;
+        font-weight:300;
+    }
+    .index-div-name{
+        padding-left:50px;
+        padding-right:50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+    .projectimg{
+        margin-top:20px;
+    }
+    .projectp p{
+        text-align: justify !important;
+        margin-top:30px;
+        font-size: 12px !important;
+        padding:5%;
+
+    }
+    .buttondivmore{
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+    .projectrow{
+        margin-top: 80px !important;
+    }
+    .projectsdiv h1{
+        margin-top: 60px;
+        font-size: 40px !important;
+    }
+    .projectsdiv h2{
+        font-size:20px !important;
+    }
+    .contactdiv h1{
+
+        margin-top: 50px;
+        font-size: 40px !important;
+    }
+
+    .contactdiv h2{
+        font-size: 20px !important;
+    }
+    .maincontact .row {
+        .col-6:first-child {
+            display: none !important;
+        }
+    }   
+
+    .smedia{
+        margin-top:80px;
+        padding-left: 20%;
+        font-size: 15px !important;
+    }
+    .smedia span{
+        font-size: 15px !important;
+    }
+    .mail h2{
+        font-size: 20px;
+    }
+    
+  
+}
+
+.contactimg {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+
+@media (max-width:1400px){
+  .aboutimg{
+    max-width: 80% !important;
+  }
+
+}
+@media (max-width:1180px){
+
+    .smedia{
+        margin-top:80px;
+        font-size: 18px !important;
+    }
+    .smedia span{
+        font-size: 18px !important;
+    }
+ 
+  
+  }
+@media (max-width:992px){
+    .abouttxt{
+        max-width: 100% !important;
+    }
+    .navbar-css{
+        display: flex;
+        justify-content:left !important;
+    }
+    .projectmore{
+        margin:10px;
+    }
+
+ 
+  
+  }
+
+.navbar-brand{
+    font-family: var(--title-font);
+}
+
+.projectimg{
+    max-width:100%;
+}
+.about  h1{
+margin-top: 50px;
+font-size: 60px;
+}
+
+.about h2{
+    font-weight: lighter;
+    font-size: 30px;
+}
+.contactdiv h1{
+
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.contactdiv h2{
+
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+hr {
+    margin-top: 50px;
+    width:85%;
+    color: var(--sec-color);
+    
+}
+.projectsdiv h2{
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+.aboutimg{
+    max-width: 50%;
+    border-radius: 5px;
+}
+.abouttxt{
+    max-width: 80%;
+    text-align: justify;
+    font-size: 20px;
+}
+.projectstitle{
+    margin-top:100px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+.lighttext{
+    font-weight: lighter;
+    font-size: 40px;
+}
+.projectdiv{
+    max-width: 90%;
+}
+.curriculumimg{
+    max-width:100%;
+}
+.curriculump1{
+    margin-top:50px;
+}
+.curriculump2{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+.navbar-css{
+    display: flex;
+    justify-content: end;
+}
+.projectsdiv h1{
+    margin-top:50px;
+    font-size: 60px;
+
+}
+.projectimage{
+    max-width: 70%;
+}
+.projectp{
+    padding-left:10%;
+    padding-right: 10%;
+}
+
+.projectp p{
+    font-size: 15px;
+}
+.projectmore{
+    margin:0;
+}
+.verticalcenter{
+
+    display: flex;
+    flex-direction:column !important;
+    justify-content: center;
+
+}
+.mail  {
+    margin-top: 100px;
+}
+
+.mail h2{
+    font-weight: lighter;
+}
+
+.smedia{
+    font-size: 30px;
+}
+.smedia span{
+    font-size: 30px;
+    margin:20px;
+    font-family: var(--main-font);
 }
